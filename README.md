@@ -1,6 +1,6 @@
 # EasyCpp
 
-This is the VS Code snippet extension for easy creating hpp, cpp (with or witout implemented pimpl idiom). Also this snippet support cration of basic cmake files.
+This is the VS Code snippets extension for easy creating hpp, cpp (with or witout implemented pimpl idiom). Also this snippets could be used to crate basic CMakeLists files.
 
 ## Usage
 
