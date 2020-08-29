@@ -9,8 +9,7 @@ cpp-pimpl
 hpp  
 hpp-pimpl  
 cmake-project  
-cmake-tests
-
+cmake-tests  
 
 ## Known Issues
 
@@ -25,6 +24,6 @@ Initial release
 
 ### Repository
 
-[GIT](https://github.com/AlexandarDjordjevic/EasyCpp)
+[Git repository](https://github.com/AlexandarDjordjevic/EasyCpp)
 
 -----------------------------------------------------------------------------------------------------------
