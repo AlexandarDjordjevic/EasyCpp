@@ -2,8 +2,9 @@
     "name": "easycpp",
     "displayName": "EasyCpp",
     "description": "Cpp snippets",
-    "version": "0.0.1",
+    "version": "1.0.0",
     "publisher": "djordjevicaleksandar",
+    "icon": "EasyCpp.png",
     "repository": {
         "type": "git",
         "url": "https://github.com/AlexandarDjordjevic/EasyCpp.git"
