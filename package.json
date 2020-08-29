@@ -1,0 +1,24 @@
+{
+    "name": "pimpl-header",
+    "displayName": "pimpl-header",
+    "description": "Header with pimpl",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.48.0"
+    },
+    "categories": [
+        "Snippets"
+    ],
+    "contributes": {
+        "snippets": [
+            {
+                "language": "cpp",
+                "path": "./snippets/cpp.code-snippets"
+            },
+            {
+                "language": "cmake",
+                "path": "./snippets/cmake.code-snippets"
+            }           
+        ]
+    }
+}

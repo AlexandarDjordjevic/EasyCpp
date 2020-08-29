@@ -1,0 +1,13 @@
+{
+    "cmake project": {
+      "prefix": ["cmake-project"],
+      "body": ["cmake_minimum_required(VERSION 3.8)\n\nproject(${1:name})\n\nset(this ${1:name})\n\nset(CMAKE_C_STANDARD 99)\nset(CMAKE_CXX_STANDARD 11)\nset(CMAKE_POSITION_INDEPENDENT_CODE ON)\n\nset(include\n    include/\n)\n\nset(source\n    source/\n)\n\nadd_executable(\\${this} ${source})\n\ntarget_include_directories(\\${this} PUBLIC include)\n\n#target_link_libraries(\\${this})\n\n#add_subdirectory(test)\n"],
+      "description": "Create cmake project"
+    },
+    "cmake tests": {
+      "prefix": ["cmake-tests"],
+      "body": ["cmake_minimum_required(VERSION 3.8)\n\n\nset(CMAKE_C_STANDARD 99)\nset(CMAKE_CXX_STANDARD 11)\nset(CMAKE_POSITION_INDEPENDENT_CODE ON)\n\n\nset(source\n\t\t\n\t)\n\n# Locate GTest\nfind_package(GTest REQUIRED)\ninclude_directories(\\${GTEST_INCLUDE_DIRS})\n\nadd_executable(\\${this} ${source})\n\n# Link runTests with what we want to test and the GTest and pthread library\ntarget_link_libraries(\\${this} \n\t\t\t\t\t\t\\${GTEST_BOTH_LIBRARIES}\n\t\t\t\t\t\tpthread\n\t\t\t\t\t\t)\n\nadd_test(\n\tNAME \\${this}\n\tCOMMAND \\${this}\n)"],
+      "description": "Create cmake for tests"
+    }
+}
+

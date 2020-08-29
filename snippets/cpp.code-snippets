@@ -1,0 +1,22 @@
+{
+    "Hpp Pimpl": {
+      "prefix": ["hpp-pimpl"],
+      "body": ["/**\n * @author your name (you@domain.com)\n * @brief \n * @version 0.1\n * @date ${CURRENT_YEAR}-${CURRENT_MONTH}-${CURRENT_DATE}\n * \n * @copyright Copyright (c) ${CURRENT_YEAR}\n * \n */\n#pragma once\n\n#include <memory>\n\nnamespace ${1:Namespace}\n{\n\tclass ${TM_FILENAME_BASE}{\n\tpublic:\n\t\t/**\n\t\t * @brief Default contstructor\n\t\t * \n\t\t */\n\t\t${TM_FILENAME_BASE}();\n\n\t\t/**\n\t\t * @brief Default destructor\n\t\t * \n\t\t */\n\t\t~${TM_FILENAME_BASE}();\n\n\t\t${TM_FILENAME_BASE}(const ${TM_FILENAME_BASE} &) = delete;\n\t\t${TM_FILENAME_BASE} &operator=(const ${TM_FILENAME_BASE} &) = delete;\n\t\t${TM_FILENAME_BASE}(${TM_FILENAME_BASE} &&) = delete;\n\t\t${TM_FILENAME_BASE} &operator=(const ${TM_FILENAME_BASE} &&) = delete;\n\n\tprivate:\n\t\tstruct impl;\n\t\tstd::shared_ptr<impl> pimpl;\n\t};\n\n} // namespace ${1:Namespace}\n"],
+      "description": "Create default header"
+    },
+    "Hpp": {
+      "prefix": ["hpp"],
+      "body": ["/**\n * @author your name (you@domain.com)\n * @brief \n * @version 0.1\n * @date ${CURRENT_YEAR}-${CURRENT_MONTH}-${CURRENT_DATE}\n * \n * @copyright Copyright (c) ${CURRENT_YEAR}\n * \n */\n#pragma once\n\nnamespace ${1:Namespace}\n{\n\tclass ${TM_FILENAME_BASE}{\n\tpublic:\n\t\t/**\n\t\t * @brief Default contstructor\n\t\t * \n\t\t */\n\t\t${TM_FILENAME_BASE}();\n\n\t\t/**\n\t\t * @brief Default destructor\n\t\t * \n\t\t */\n\t\t~${TM_FILENAME_BASE}();\n\n\t\t${TM_FILENAME_BASE}(const ${TM_FILENAME_BASE} &) = delete;\n\t\t${TM_FILENAME_BASE} &operator=(const ${TM_FILENAME_BASE} &) = delete;\n\t\t${TM_FILENAME_BASE}(${TM_FILENAME_BASE} &&) = delete;\n\t\t${TM_FILENAME_BASE} &operator=(const ${TM_FILENAME_BASE} &&) = delete;\n\n\tprivate:\n\t};\n\n} // namespace ${1:Namespace}\n"],
+      "description": "Create default header"
+    },
+    "Cpp Pimpl": {
+        "prefix": ["cpp-pimpl"],
+        "body": ["#include <${TM_FILENAME_BASE}.hpp>\n\nnamespace ${1:Namespace}{\n\t/**\n\t * @brief Pimpl implementation\n\t * \n\t */\n\tstruct ${TM_FILENAME_BASE}::impl{\n\n\t};\n\n\t${TM_FILENAME_BASE}::${TM_FILENAME_BASE}()\n\t\t: pimpl(new ${TM_FILENAME_BASE}::impl())\n\t{\n\n\t}\n\t${TM_FILENAME_BASE}::~${TM_FILENAME_BASE}(){\n\n\t}\n\n}//namespace ${1:Namespace}"],
+        "description": "Create default header"
+    },
+    "Cpp": {
+      "prefix": ["cpp"],
+      "body": ["#include <${TM_FILENAME_BASE}.hpp>\n\nnamespace ${1:Namespace}{\n\n\t${TM_FILENAME_BASE}::${TM_FILENAME_BASE}(){\n\n\t}\n\t${TM_FILENAME_BASE}::~${TM_FILENAME_BASE}(){\n\n\t}\n\n}//namespace ${1:Namespace}"],
+      "description": "Create default header"
+    }
+}
