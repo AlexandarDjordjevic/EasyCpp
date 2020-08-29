@@ -1,8 +1,13 @@
 {
-    "name": "pimpl-header",
-    "displayName": "pimpl-header",
-    "description": "Header with pimpl",
+    "name": "easycpp",
+    "displayName": "EasyCpp",
+    "description": "Cpp snippets",
     "version": "0.0.1",
+    "publisher": "djordjevicaleksandar",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/AlexandarDjordjevic/EasyCpp.git"
+    },
     "engines": {
         "vscode": "^1.48.0"
     },

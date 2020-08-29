@@ -8,6 +8,8 @@ cpp
 cpp-pimpl  
 hpp  
 hpp-pimpl  
+cmake-project  
+cmake-tests
 
 
 ## Known Issues
