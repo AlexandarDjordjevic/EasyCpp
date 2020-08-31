@@ -10,6 +10,9 @@
 - snippet for creating basic cmake file with google tests support
 
 ### Changed
+## [1.0.1] - 2020-8-31
+
+- downgrade required VS Code version  
 
 ### Removed
 

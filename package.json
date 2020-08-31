@@ -2,7 +2,7 @@
     "name": "easycpp",
     "displayName": "EasyCpp",
     "description": "Cpp snippets",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "publisher": "djordjevicaleksandar",
     "icon": "EasyCpp.png",
     "repository": {
@@ -10,7 +10,7 @@
         "url": "https://github.com/AlexandarDjordjevic/EasyCpp.git"
     },
     "engines": {
-        "vscode": "^1.48.0"
+        "vscode": "^1.40.0"
     },
     "categories": [
         "Snippets"
