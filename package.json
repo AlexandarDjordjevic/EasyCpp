@@ -2,7 +2,7 @@
     "name": "easycpp",
     "displayName": "EasyCpp",
     "description": "Cpp snippets",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "publisher": "djordjevicaleksandar",
     "icon": "EasyCpp.png",
     "repository": {
@@ -24,7 +24,7 @@
             {
                 "language": "cmake",
                 "path": "./snippets/cmake.code-snippets"
-            }           
+            }
         ]
     }
 }
