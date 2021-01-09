@@ -2,6 +2,8 @@
 
 ## [1.0.3] - 2021-01-09
 
+### Changed
+
 - rename pimpl -> m_Impl
 - remove const from move constructor
 
